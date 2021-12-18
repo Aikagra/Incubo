@@ -92,10 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                cdd.show();
-                WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-                layoutParams.dimAmount = 0.75f;
-                getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-                getWindow().setAttributes(layoutParams);
 
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
